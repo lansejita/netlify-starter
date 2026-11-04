@@ -1,1 +1,1 @@
-"[build.environment]\n  NODE_VERSION = \"24\"\n  \n[functions]\n  directory = \"netlify/functions/\"\n  node_bundler = \"esbuild\"\n\n[[redirects]]\n  from = \"/api/*\"\n  to = \"/.netlify/functions/comment/:splat\"\n  status = 200\n  force = true\n"
+"[build.environment]\n  NODE_VERSION = \"24\"\n\n[functions]\n  directory = \"netlify/functions/\"\n  node_bundler = \"esbuild\"\n\n[[redirects]]\n  from = \"/api/*\"\n  to = \"/.netlify/functions/comment/:splat\"\n  status = 200\n  force = true"

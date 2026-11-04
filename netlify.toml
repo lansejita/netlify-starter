@@ -1,6 +1,9 @@
+[build]
+  command = "cd netlify/functions && npm install @waline/vercel serverless-http"
+
 [build.environment]
   NODE_VERSION = "24"
-  
+
 [functions]
   directory = "netlify/functions/"
   node_bundler = "none"
